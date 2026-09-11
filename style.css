@@ -1,0 +1,698 @@
+/* =====================================================
+   PANIFICO MENU
+   Premium Italian-inspired typography
+   ===================================================== */
+
+
+/* ---------- GOOGLE FONT FALLBACKS ---------- */
+
+:root {
+    --cream: #f7efdc;
+    --burgundy: #781326;
+    --dark: #241b18;
+    --muted: #675d57;
+}
+
+
+/* ---------- BASIC RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--burgundy);
+
+    font-family: "DM Sans", Arial, sans-serif;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   SIDE BRAND
+   ===================================================== */
+
+.side-brand {
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 110px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border-right: 1px solid rgba(120, 19, 38, 0.25);
+
+    background: var(--cream);
+
+    z-index: 10;
+}
+
+
+/* PANIFICO */
+
+.brand-main {
+    font-family: "Bodoni Moda", Georgia, serif;
+
+    font-size: 58px;
+
+    font-weight: 900;
+
+    letter-spacing: 5px;
+
+    writing-mode: vertical-rl;
+
+    transform: rotate(180deg);
+
+    line-height: 1;
+
+    color: var(--burgundy);
+}
+
+
+/* Side tagline */
+
+.brand-side {
+    margin-top: 35px;
+
+    font-family:
+        "Minion Pro",
+        "Minion",
+        "Times New Roman",
+        serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    writing-mode: vertical-rl;
+
+    transform: rotate(180deg);
+
+    color: var(--burgundy);
+
+    opacity: 0.9;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+   ===================================================== */
+
+.menu-container {
+    width: calc(100% - 110px);
+
+    margin-left: 110px;
+
+    max-width: 1400px;
+
+    padding: 0 7%;
+}
+
+
+/* =====================================================
+   MENU PAGE
+   ===================================================== */
+
+.menu-page {
+    min-height: 100vh;
+
+    padding: 90px 5%;
+
+    border-bottom: 1px solid rgba(120, 19, 38, 0.25);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+/* =====================================================
+   TOP LABEL
+   ===================================================== */
+
+.top-label {
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+
+    color: var(--burgundy);
+}
+
+
+/* =====================================================
+   MAIN HEADINGS
+   ===================================================== */
+
+h1 {
+    font-family: "Bodoni Moda", Georgia, serif;
+
+    font-size: clamp(42px, 5vw, 78px);
+
+    line-height: 0.95;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 55px;
+
+    color: var(--burgundy);
+}
+
+
+/* Smaller section heading */
+
+h2 {
+    font-family: "Bodoni Moda", Georgia, serif;
+
+    font-size: clamp(28px, 3vw, 45px);
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    margin-top: 55px;
+
+    margin-bottom: 30px;
+
+    color: var(--burgundy);
+}
+
+
+/* =====================================================
+   SUB HEADING
+   ===================================================== */
+
+.sub-heading {
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+    margin-top: -35px;
+
+    margin-bottom: 40px;
+}
+
+
+/* =====================================================
+   FOOD ITEMS
+   ===================================================== */
+
+.menu-item {
+    width: 100%;
+
+    max-width: 950px;
+
+    margin-bottom: 38px;
+}
+
+
+/* Name + Price */
+
+.item-top {
+    display: flex;
+
+    align-items: baseline;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    border-bottom: 1px solid rgba(120, 19, 38, 0.18);
+
+    padding-bottom: 7px;
+}
+
+
+/* FOOD NAME */
+
+.food-title {
+    font-family: "Bodoni Moda", Georgia, serif;
+
+    font-size: clamp(21px, 2vw, 30px);
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    letter-spacing: 0.3px;
+
+    color: var(--burgundy);
+}
+
+
+/* PRICE */
+
+.price {
+    flex-shrink: 0;
+
+    font-family: "Bodoni Moda", Georgia, serif;
+
+    font-size: 21px;
+
+    font-weight: 900;
+
+    letter-spacing: 0.5px;
+
+    color: var(--burgundy);
+
+    white-space: nowrap;
+}
+
+
+/* DESCRIPTION */
+
+.menu-item p {
+    margin-top: 9px;
+
+    max-width: 850px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+
+    font-weight: 500;
+
+    color: var(--dark);
+}
+
+
+/* =====================================================
+   ADD-ONS
+   ===================================================== */
+
+.add-on {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    font-family:
+        "Minion Pro",
+        "Minion",
+        "Times New Roman",
+        serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    font-style: italic;
+
+    letter-spacing: 0.5px;
+
+    color: var(--burgundy);
+}
+
+
+/* =====================================================
+   TAG
+   ===================================================== */
+
+.tag {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    border: 1px solid var(--burgundy);
+
+    padding: 3px 7px;
+}
+
+
+/* =====================================================
+   NOTES
+   ===================================================== */
+
+.note {
+    margin-top: 60px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(120, 19, 38, 0.3);
+
+    max-width: 600px;
+
+    font-family:
+        "Minion Pro",
+        "Minion",
+        "Times New Roman",
+        serif;
+
+    font-size: 16px;
+
+    font-style: italic;
+
+    font-weight: 600;
+
+    color: var(--burgundy);
+}
+
+
+/* =====================================================
+   DESSERT
+   ===================================================== */
+
+.dessert-heading {
+    margin-top: 80px;
+}
+
+
+/* =====================================================
+   LARGE GAP
+   ===================================================== */
+
+.large-gap {
+    height: 40px;
+}
+
+
+/* =====================================================
+   BEVERAGE PAGE
+   ===================================================== */
+
+.beverage-page {
+    justify-content: flex-start;
+}
+
+
+/* Drink grid */
+
+.drink-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 80px;
+
+    max-width: 1000px;
+}
+
+
+/* Drink row */
+
+.drink {
+    display: flex;
+
+    align-items: baseline;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid rgba(120, 19, 38, 0.16);
+}
+
+
+/* Drink name */
+
+.drink span {
+    font-family:
+        "Minion Pro",
+        "Minion",
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    color: var(--dark);
+}
+
+
+/* Drink price */
+
+.drink b {
+    font-family: "Bodoni Moda", Georgia, serif;
+
+    font-size: 16px;
+
+    font-weight: 900;
+
+    white-space: nowrap;
+
+    color: var(--burgundy);
+}
+
+
+/* =====================================================
+   FINAL BRAND
+   ===================================================== */
+
+.final-brand {
+    margin-top: auto;
+
+    padding-top: 120px;
+
+    text-align: center;
+
+    color: var(--burgundy);
+}
+
+
+.final-brand div {
+    font-family: "Bodoni Moda", Georgia, serif;
+
+    font-size: clamp(65px, 10vw, 150px);
+
+    font-weight: 900;
+
+    letter-spacing: 8px;
+
+    line-height: 0.9;
+}
+
+
+.final-brand small {
+    display: block;
+
+    margin-top: 20px;
+
+    font-family:
+        "Minion Pro",
+        "Minion",
+        "Times New Roman",
+        serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .side-brand {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        padding: 20px 15px;
+
+        border-right: none;
+
+        border-bottom: 1px solid rgba(120, 19, 38, 0.25);
+
+        flex-direction: row;
+
+        justify-content: space-between;
+    }
+
+
+    .brand-main {
+        writing-mode: horizontal-tb;
+
+        transform: none;
+
+        font-size: 35px;
+
+        letter-spacing: 4px;
+    }
+
+
+    .brand-side {
+        margin: 0;
+
+        writing-mode: horizontal-tb;
+
+        transform: none;
+
+        font-size: 9px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .menu-container {
+        width: 100%;
+
+        margin-left: 0;
+
+        padding: 0 20px;
+    }
+
+
+    .menu-page {
+        min-height: auto;
+
+        padding: 65px 5%;
+
+        justify-content: flex-start;
+    }
+
+
+    h1 {
+        font-size: 42px;
+
+        margin-bottom: 42px;
+    }
+
+
+    h2 {
+        font-size: 31px;
+
+        margin-top: 45px;
+    }
+
+
+    .food-title {
+        font-size: 22px;
+    }
+
+
+    .price {
+        font-size: 18px;
+    }
+
+
+    .menu-item p {
+        font-size: 13px;
+    }
+
+
+    .drink-grid {
+        grid-template-columns: 1fr;
+
+        column-gap: 0;
+    }
+
+
+    .drink span {
+        font-size: 16px;
+    }
+
+
+    .final-brand {
+        padding-top: 90px;
+    }
+
+
+    .final-brand div {
+        font-size: 60px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL PHONES
+   ===================================================== */
+
+@media (max-width: 430px) {
+
+    .brand-main {
+        font-size: 29px;
+    }
+
+
+    .brand-side {
+        font-size: 8px;
+    }
+
+
+    .menu-page {
+        padding: 55px 3%;
+    }
+
+
+    h1 {
+        font-size: 36px;
+    }
+
+
+    h2 {
+        font-size: 27px;
+    }
+
+
+    .food-title {
+        font-size: 20px;
+    }
+
+
+    .price {
+        font-size: 17px;
+    }
+
+
+    .item-top {
+        gap: 12px;
+    }
+
+
+    .menu-item {
+        margin-bottom: 32px;
+    }
+
+}
