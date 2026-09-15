@@ -269,6 +269,50 @@ h2 {
     letter-spacing: 0.3px;
 
     color: var(--burgundy);
+
+    display: inline-flex;
+
+    align-items: center;
+}
+
+
+/* =====================================================
+   VEGETARIAN SYMBOL
+   ===================================================== */
+
+.veg-symbol {
+    display: inline-block;
+
+    width: 12px;
+    height: 12px;
+
+    border: 2px solid #228B22;
+
+    position: relative;
+
+    margin-right: 8px;
+
+    vertical-align: middle;
+
+    flex-shrink: 0;
+}
+
+.veg-symbol::after {
+    content: "";
+
+    position: absolute;
+
+    width: 5px;
+    height: 5px;
+
+    background: #228B22;
+
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
 }
 
 
@@ -693,6 +737,16 @@ h2 {
 
     .menu-item {
         margin-bottom: 32px;
+    }
+
+
+    .veg-symbol {
+        width: 11px;
+        height: 11px;
+
+        border-width: 2px;
+
+        margin-right: 7px;
     }
 
 }
